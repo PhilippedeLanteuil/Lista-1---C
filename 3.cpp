@@ -1,46 +1,15 @@
 #include <stdio.h>
-int main(){
- 
-    int ano;
- 
-    printf("\nDigite um ano (considerando que estamos em 2022): ");
- 
-    scanf("%d",&ano);
-
-    if(ano == 2022 && ano % 4 == 0  &&  ano % 100 != 0 || ano % 400 ==0 ){
-
-    printf("\nO ano eh bissexto\n");
-
-    }
-
-    else{
-
-    printf("\nO ano nao eh bissexto\n");
-
-    }
-    if(ano < 2022 && ano % 4 == 0  &&  ano % 100 != 0 || ano % 400 ==0 ){
-
-    printf("\nO ano foi bissexto\n");
-
-    }
-
-    else{
-
-    printf("\nO ano nao foi bissexto\n");
-
-    }
-    if(ano > 2022 && ano % 4 == 0  &&  ano % 100 != 0 || ano % 400 ==0 ){
-
-    printf("\nO ano sera bissexto\n");
-
-    }
-
-    else{
-
-    printf("\nO ano nao sera bissexto\n");
-
-    }
-
-        return 0;
-
+int main() {
+	int num1, num2, num3;
+	float media;
+	printf("\nDigite o primeiro numero: ");
+	scanf("%d", &num1);
+	printf("\nDigite o segundo numero: ");
+	scanf("%d", &num2);
+	printf("\nDigite o terceiro numero: ");
+	scanf("%d", &num3);
+	media = (num1 + num2 + num3) / 3;
+	printf("\nO resultado da média foi: %f" ,media);
+	return 0;
 }
+	
